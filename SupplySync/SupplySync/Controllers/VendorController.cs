@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using SupplySync.DTOs;
+using SupplySync.DTOs.Vendor;
 using SupplySync.Services.Interfaces;
 
 namespace SupplySync.Controllers
@@ -20,8 +20,14 @@ namespace SupplySync.Controllers
 		{
 			VendorResponseDto createdVendor = await _vendorService.CreateVendor(createVendorRequestDto);
 
-			return Ok();
+			return Ok(createdVendor);
 		}
 
+		[HttpPost("{vendorId}/documents")]
+		public async Task<IActionResult> CreateVendorDocument([FromBody] CreateVendorDocumentRequestDto createVendorDocumentRequestDto)
+		{
+			VendorDocumentResponseDto createdVendorDocument = await _vendorService.CreateVendorDocument(createVendorDocumentRequestDto);
+			return Ok(createdVendorDocument);
+		}
 	}
 }

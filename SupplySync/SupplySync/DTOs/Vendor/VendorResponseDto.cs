@@ -1,6 +1,6 @@
 ﻿using SupplySync.Constants.Enums;
 
-namespace SupplySync.DTOs
+namespace SupplySync.DTOs.Vendor
 {
 	public class VendorResponseDto
 	{

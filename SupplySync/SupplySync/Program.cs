@@ -15,6 +15,14 @@ builder.Services.AddDbContext<AppDbContext>(
 builder.Services.AddScoped<IAuditService, AuditService>();
 builder.Services.AddScoped<IAuditRepository, AuditRepository>();
 
+
+
+// Harshit AddScoped
+builder.Services.AddScoped<IVendorService, VendorService>();
+builder.Services.AddScoped<IVendorRepository, VendorRepository>();
+builder.Services.AddScoped<IContractService, ContractService>();
+builder.Services.AddScoped<IContractRepository, ContractRepository>();
+
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 

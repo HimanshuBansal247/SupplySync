@@ -7,5 +7,6 @@ namespace SupplySync.Repositories.Interfaces
 	public interface IVendorRepository
 	{
 		Task<Vendor> CreateVendor(Vendor newVendor);
+		Task<VendorDocument> CreateVendorDocument(VendorDocument newVendorDocument);
 	}
 }
