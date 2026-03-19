@@ -11,8 +11,14 @@ namespace SupplySync.Mappers
             ConfigureComplianceRecordMappings();
             ConfigureReportMappings();
 
+            ConfigureInvoiceMappings();
+            ConfigurePaymentMappings();
+
+
             ConfigureVendorMappings();
             ConfigureContractMappings();
+
+
         }
     }
 }

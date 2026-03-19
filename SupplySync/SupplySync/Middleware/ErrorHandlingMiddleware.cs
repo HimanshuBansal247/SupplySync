@@ -37,6 +37,7 @@ namespace SupplySync.Middleware
 					errorName = ex.GetType().Name,
 					traceId = context.TraceIdentifier
 				};
+
 				await context.Response.WriteAsync(JsonSerializer.Serialize(response));
 			}
 		}
