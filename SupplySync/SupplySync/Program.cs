@@ -25,6 +25,9 @@ builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddScoped<IComplianceRecordRepository, ComplianceRecordRepository>();
 builder.Services.AddScoped<IAuditRepository, AuditRepository>();
 builder.Services.AddScoped<IReportRepository, ReportRepository>();
+builder.Services.AddScoped<IWarehouseRepository, WarehouseRepository>();
+builder.Services.AddScoped<IInventoryRepository, InventoryRepository>();
+builder.Services.AddScoped<IReceiptRepository, ReceiptRepository>();
 
 // --------------------
 // SERVICES
@@ -32,6 +35,10 @@ builder.Services.AddScoped<IReportRepository, ReportRepository>();
 builder.Services.AddScoped<IComplianceRecordService, ComplianceRecordService>();
 builder.Services.AddScoped<IAuditService, AuditService>();
 builder.Services.AddScoped<IReportService, ReportService>();
+builder.Services.AddScoped<IWarehouseService, WarehouseService>();
+builder.Services.AddScoped<IInventoryService, InventoryService>();
+builder.Services.AddScoped<IReceiptService, ReceiptService>();
+
 
 // --------------------
 // CONTROLLERS & API

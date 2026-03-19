@@ -10,7 +10,11 @@ namespace SupplySync.Mappers
             ConfigureAuditMappings();
             ConfigureComplianceRecordMappings();
             ConfigureReportMappings();
+            ConfigureWarehouseMappings();
+            ConfigureInventoryMappings();
+            ConfigureReceiptMappings();
 
-        }
+
+		}
     }
 }
