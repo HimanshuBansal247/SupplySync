@@ -10,7 +10,6 @@ namespace SupplySync.Mappers
             ConfigureAuditMappings();
             ConfigureComplianceRecordMappings();
             ConfigureReportMappings();
-<<<<<<< Updated upstream
 
             ConfigureInvoiceMappings();
             ConfigurePaymentMappings();
@@ -20,13 +19,10 @@ namespace SupplySync.Mappers
             ConfigureContractMappings();
 
 
-            ConfigurePurchaseOrderAndDeliveryMappings();
-=======
             ConfigurePurchaseOrderMappings();
             ConfigureDeliveryMappings();
 
 
->>>>>>> Stashed changes
 
         }
     }
